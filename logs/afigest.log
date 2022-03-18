@@ -1,0 +1,614 @@
+[01/Mar/2022:11:09:52] (index) SELECT DATA: 22
+[01/Mar/2022:11:09:52] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:09:52] (index) ID Treballador:83
+[01/Mar/2022:11:09:52] (index) ID Projecte:150038
+[01/Mar/2022:11:09:52] (index) Data:2022-02-24
+[01/Mar/2022:11:09:52] (index) Hores:5
+[01/Mar/2022:11:09:52] (index) KM:0
+[01/Mar/2022:11:09:52] (index) Observacions:
+[01/Mar/2022:11:09:52] (index) CatProf:Delineant
+[01/Mar/2022:11:09:52] (index) Dietes:
+[01/Mar/2022:11:09:52] (index) Preu hora:
+[01/Mar/2022:11:09:52] (index) Preu KM:
+[01/Mar/2022:11:12:29] (index) SELECT DATA: 22
+[01/Mar/2022:11:12:29] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:12:29] (index) ID Treballador:83
+[01/Mar/2022:11:12:29] (index) ID Projecte:170006
+[01/Mar/2022:11:12:29] (index) Data:2022-03-01
+[01/Mar/2022:11:12:29] (index) Hores:
+[01/Mar/2022:11:12:29] (index) KM:
+[01/Mar/2022:11:12:29] (index) Observacions:
+[01/Mar/2022:11:12:29] (index) CatProf:Delineant
+[01/Mar/2022:11:12:29] (index) Dietes:
+[01/Mar/2022:11:12:29] (index) Preu hora:
+[01/Mar/2022:11:12:29] (index) Preu KM:
+[01/Mar/2022:11:39:46] (index) SELECT DATA: 22
+[01/Mar/2022:11:39:46] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:39:46] (index) ID Treballador:83
+[01/Mar/2022:11:39:46] (index) ID Projecte:
+[01/Mar/2022:11:39:46] (index) Data:2022-03-01
+[01/Mar/2022:11:39:46] (index) Hores:
+[01/Mar/2022:11:39:46] (index) KM:
+[01/Mar/2022:11:39:46] (index) Observacions:
+[01/Mar/2022:11:39:46] (index) CatProf:Delineant
+[01/Mar/2022:11:39:46] (index) Dietes:
+[01/Mar/2022:11:39:46] (index) Preu hora:
+[01/Mar/2022:11:39:46] (index) Preu KM:
+[01/Mar/2022:11:40:03] (index) SELECT DATA: 22
+[01/Mar/2022:11:40:03] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:40:03] (index) ID Treballador:83
+[01/Mar/2022:11:40:03] (index) ID Projecte:
+[01/Mar/2022:11:40:03] (index) Data:2022-03-01
+[01/Mar/2022:11:40:03] (index) Hores:0
+[01/Mar/2022:11:40:03] (index) KM:0
+[01/Mar/2022:11:40:03] (index) Observacions:
+[01/Mar/2022:11:40:03] (index) CatProf:Delineant
+[01/Mar/2022:11:40:03] (index) Dietes:
+[01/Mar/2022:11:40:03] (index) Preu hora:
+[01/Mar/2022:11:40:03] (index) Preu KM:
+[01/Mar/2022:11:40:03] (index) ID Treballador:83
+[01/Mar/2022:11:40:03] (index) ID Projecte:
+[01/Mar/2022:11:40:03] (index) Data:2022-03-01
+[01/Mar/2022:11:40:03] (index) Hores:
+[01/Mar/2022:11:40:03] (index) KM:
+[01/Mar/2022:11:40:03] (index) Observacions:
+[01/Mar/2022:11:40:03] (index) CatProf:Delineant
+[01/Mar/2022:11:40:03] (index) Dietes:
+[01/Mar/2022:11:40:03] (index) Preu hora:
+[01/Mar/2022:11:40:03] (index) Preu KM:
+[01/Mar/2022:11:41:53] (index) SELECT DATA: 22
+[01/Mar/2022:11:41:53] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:41:53] (index) ID Treballador:83
+[01/Mar/2022:11:41:53] (index) ID Projecte:
+[01/Mar/2022:11:41:53] (index) Data:2022-03-01
+[01/Mar/2022:11:41:53] (index) Hores:0
+[01/Mar/2022:11:41:53] (index) KM:0
+[01/Mar/2022:11:41:53] (index) Observacions:
+[01/Mar/2022:11:41:53] (index) CatProf:Delineant
+[01/Mar/2022:11:41:53] (index) Dietes:
+[01/Mar/2022:11:41:53] (index) Preu hora:
+[01/Mar/2022:11:41:53] (index) Preu KM:
+[01/Mar/2022:11:41:53] (index) ID Treballador:83
+[01/Mar/2022:11:41:53] (index) ID Projecte:
+[01/Mar/2022:11:41:53] (index) Data:2022-03-01
+[01/Mar/2022:11:41:53] (index) Hores:
+[01/Mar/2022:11:41:53] (index) KM:
+[01/Mar/2022:11:41:53] (index) Observacions:
+[01/Mar/2022:11:41:53] (index) CatProf:Delineant
+[01/Mar/2022:11:41:53] (index) Dietes:
+[01/Mar/2022:11:41:53] (index) Preu hora:
+[01/Mar/2022:11:41:53] (index) Preu KM:
+[01/Mar/2022:11:42:23] (index) SELECT DATA: 22
+[01/Mar/2022:11:42:23] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:42:23] (index) ID Treballador:83
+[01/Mar/2022:11:42:23] (index) ID Projecte:
+[01/Mar/2022:11:42:23] (index) Data:2022-03-01
+[01/Mar/2022:11:42:23] (index) Hores:0
+[01/Mar/2022:11:42:23] (index) KM:0
+[01/Mar/2022:11:42:23] (index) Observacions:
+[01/Mar/2022:11:42:23] (index) CatProf:Delineant
+[01/Mar/2022:11:42:23] (index) Dietes:
+[01/Mar/2022:11:42:23] (index) Preu hora:
+[01/Mar/2022:11:42:23] (index) Preu KM:
+[01/Mar/2022:11:42:23] (index) ID Treballador:83
+[01/Mar/2022:11:42:23] (index) ID Projecte:
+[01/Mar/2022:11:42:23] (index) Data:2022-03-01
+[01/Mar/2022:11:42:23] (index) Hores:
+[01/Mar/2022:11:42:23] (index) KM:
+[01/Mar/2022:11:42:23] (index) Observacions:
+[01/Mar/2022:11:42:23] (index) CatProf:Delineant
+[01/Mar/2022:11:42:23] (index) Dietes:
+[01/Mar/2022:11:42:23] (index) Preu hora:
+[01/Mar/2022:11:42:23] (index) Preu KM:
+[01/Mar/2022:11:44:10] (index) SELECT DATA: 22
+[01/Mar/2022:11:44:10] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:44:10] (index) ID Treballador:83
+[01/Mar/2022:11:44:10] (index) ID Projecte:
+[01/Mar/2022:11:44:10] (index) Data:2022-03-01
+[01/Mar/2022:11:44:10] (index) Hores:1
+[01/Mar/2022:11:44:10] (index) KM:0
+[01/Mar/2022:11:44:10] (index) Observacions:
+[01/Mar/2022:11:44:10] (index) CatProf:Delineant
+[01/Mar/2022:11:44:10] (index) Dietes:
+[01/Mar/2022:11:44:10] (index) Preu hora:
+[01/Mar/2022:11:44:10] (index) Preu KM:
+[01/Mar/2022:11:44:10] (index) ID Treballador:83
+[01/Mar/2022:11:44:10] (index) ID Projecte:
+[01/Mar/2022:11:44:10] (index) Data:2022-03-01
+[01/Mar/2022:11:44:10] (index) Hores:2
+[01/Mar/2022:11:44:10] (index) KM:0
+[01/Mar/2022:11:44:10] (index) Observacions:
+[01/Mar/2022:11:44:10] (index) CatProf:Delineant
+[01/Mar/2022:11:44:10] (index) Dietes:
+[01/Mar/2022:11:44:10] (index) Preu hora:
+[01/Mar/2022:11:44:10] (index) Preu KM:
+[01/Mar/2022:11:47:41] (index) SELECT DATA: 22
+[01/Mar/2022:11:47:41] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:47:41] (index) ID Treballador:83
+[01/Mar/2022:11:47:41] (index) ID Projecte:
+[01/Mar/2022:11:47:41] (index) Data:2022-03-01
+[01/Mar/2022:11:47:41] (index) Hores:2
+[01/Mar/2022:11:47:41] (index) KM:0
+[01/Mar/2022:11:47:41] (index) Observacions:
+[01/Mar/2022:11:47:41] (index) CatProf:Delineant
+[01/Mar/2022:11:47:41] (index) Dietes:
+[01/Mar/2022:11:47:41] (index) Preu hora:
+[01/Mar/2022:11:47:41] (index) Preu KM:
+[01/Mar/2022:11:47:41] (index) ID Treballador:83
+[01/Mar/2022:11:47:41] (index) ID Projecte:
+[01/Mar/2022:11:47:41] (index) Data:2022-03-01
+[01/Mar/2022:11:47:41] (index) Hores:
+[01/Mar/2022:11:47:41] (index) KM:
+[01/Mar/2022:11:47:41] (index) Observacions:
+[01/Mar/2022:11:47:41] (index) CatProf:Delineant
+[01/Mar/2022:11:47:41] (index) Dietes:
+[01/Mar/2022:11:47:41] (index) Preu hora:
+[01/Mar/2022:11:47:41] (index) Preu KM:
+[01/Mar/2022:11:47:52] (index) SELECT DATA: 22
+[01/Mar/2022:11:47:52] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:47:52] (index) ID Treballador:83
+[01/Mar/2022:11:47:52] (index) ID Projecte:
+[01/Mar/2022:11:47:52] (index) Data:2022-03-01
+[01/Mar/2022:11:47:52] (index) Hores:0
+[01/Mar/2022:11:47:52] (index) KM:0
+[01/Mar/2022:11:47:52] (index) Observacions:
+[01/Mar/2022:11:47:52] (index) CatProf:Delineant
+[01/Mar/2022:11:47:52] (index) Dietes:
+[01/Mar/2022:11:47:52] (index) Preu hora:
+[01/Mar/2022:11:47:52] (index) Preu KM:
+[01/Mar/2022:11:47:52] (index) ID Treballador:83
+[01/Mar/2022:11:47:52] (index) ID Projecte:
+[01/Mar/2022:11:47:52] (index) Data:2022-03-01
+[01/Mar/2022:11:47:52] (index) Hores:2
+[01/Mar/2022:11:47:52] (index) KM:0
+[01/Mar/2022:11:47:52] (index) Observacions:
+[01/Mar/2022:11:47:52] (index) CatProf:Delineant
+[01/Mar/2022:11:47:52] (index) Dietes:
+[01/Mar/2022:11:47:52] (index) Preu hora:
+[01/Mar/2022:11:47:52] (index) Preu KM:
+[01/Mar/2022:11:47:52] (index) ID Treballador:83
+[01/Mar/2022:11:47:52] (index) ID Projecte:
+[01/Mar/2022:11:47:52] (index) Data:2022-03-01
+[01/Mar/2022:11:47:52] (index) Hores:
+[01/Mar/2022:11:47:52] (index) KM:
+[01/Mar/2022:11:47:52] (index) Observacions:
+[01/Mar/2022:11:47:52] (index) CatProf:Delineant
+[01/Mar/2022:11:47:52] (index) Dietes:
+[01/Mar/2022:11:47:52] (index) Preu hora:
+[01/Mar/2022:11:47:52] (index) Preu KM:
+[01/Mar/2022:11:48:21] (index) SELECT DATA: 22
+[01/Mar/2022:11:48:21] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:48:21] (index) ID Treballador:83
+[01/Mar/2022:11:48:21] (index) ID Projecte:
+[01/Mar/2022:11:48:21] (index) Data:2022-03-01
+[01/Mar/2022:11:48:21] (index) Hores:1
+[01/Mar/2022:11:48:21] (index) KM:0
+[01/Mar/2022:11:48:21] (index) Observacions:
+[01/Mar/2022:11:48:21] (index) CatProf:Delineant
+[01/Mar/2022:11:48:21] (index) Dietes:
+[01/Mar/2022:11:48:21] (index) Preu hora:
+[01/Mar/2022:11:48:21] (index) Preu KM:
+[01/Mar/2022:11:48:21] (index) ID Treballador:83
+[01/Mar/2022:11:48:21] (index) ID Projecte:
+[01/Mar/2022:11:48:21] (index) Data:2022-03-01
+[01/Mar/2022:11:48:21] (index) Hores:2
+[01/Mar/2022:11:48:21] (index) KM:0
+[01/Mar/2022:11:48:21] (index) Observacions:
+[01/Mar/2022:11:48:21] (index) CatProf:Delineant
+[01/Mar/2022:11:48:21] (index) Dietes:
+[01/Mar/2022:11:48:21] (index) Preu hora:
+[01/Mar/2022:11:48:21] (index) Preu KM:
+[01/Mar/2022:11:48:21] (index) ID Treballador:83
+[01/Mar/2022:11:48:21] (index) ID Projecte:
+[01/Mar/2022:11:48:21] (index) Data:2022-03-01
+[01/Mar/2022:11:48:21] (index) Hores:3
+[01/Mar/2022:11:48:21] (index) KM:0
+[01/Mar/2022:11:48:21] (index) Observacions:
+[01/Mar/2022:11:48:21] (index) CatProf:Delineant
+[01/Mar/2022:11:48:21] (index) Dietes:
+[01/Mar/2022:11:48:21] (index) Preu hora:
+[01/Mar/2022:11:48:21] (index) Preu KM:
+[01/Mar/2022:11:48:21] (index) ID Treballador:83
+[01/Mar/2022:11:48:21] (index) ID Projecte:
+[01/Mar/2022:11:48:21] (index) Data:2022-03-01
+[01/Mar/2022:11:48:21] (index) Hores:0
+[01/Mar/2022:11:48:21] (index) KM:0
+[01/Mar/2022:11:48:21] (index) Observacions:
+[01/Mar/2022:11:48:21] (index) CatProf:Delineant
+[01/Mar/2022:11:48:21] (index) Dietes:
+[01/Mar/2022:11:48:21] (index) Preu hora:
+[01/Mar/2022:11:48:21] (index) Preu KM:
+[01/Mar/2022:11:56:16] (index) SELECT DATA: 22
+[01/Mar/2022:11:56:16] (index) SELECT COL: PreuHoresDelineant
+[01/Mar/2022:11:56:16] (index) ID Treballador:83
+[01/Mar/2022:11:56:16] (index) ID Projecte:
+[01/Mar/2022:11:56:16] (index) Data:2022-02-24
+[01/Mar/2022:11:56:16] (index) Hores:5
+[01/Mar/2022:11:56:16] (index) KM:0
+[01/Mar/2022:11:56:16] (index) Observacions:
+[01/Mar/2022:11:56:16] (index) CatProf:Delineant
+[01/Mar/2022:11:56:16] (index) Dietes:
+[01/Mar/2022:11:56:16] (index) Preu hora:
+[01/Mar/2022:11:56:16] (index) Preu KM:
+[03/Mar/2022:06:51:10] (index) SELECT DATA: 22
+[03/Mar/2022:06:51:10] (index) SELECT COL: PreuHoresDelineant
+[03/Mar/2022:06:51:10] (index) ID Treballador:83
+[03/Mar/2022:06:51:10] (index) ID Projecte:
+[03/Mar/2022:06:51:10] (index) Data:2022-03-03
+[03/Mar/2022:06:51:10] (index) Hores:4
+[03/Mar/2022:06:51:10] (index) KM:
+[03/Mar/2022:06:51:10] (index) Observacions:
+[03/Mar/2022:06:51:10] (index) CatProf:Delineant
+[03/Mar/2022:06:51:10] (index) Dietes:
+[03/Mar/2022:06:51:10] (index) Preu hora:
+[03/Mar/2022:06:51:10] (index) Preu KM:
+[03/Mar/2022:15:07:33] (index) SELECT DATA: 22
+[03/Mar/2022:15:08:59] (index) SELECT DATA: 22
+[03/Mar/2022:15:11:21] (index) SELECT DATA: 22
+[03/Mar/2022:15:16:19] (index) SELECT DATA: 22
+[03/Mar/2022:15:22:07] (index) SELECT DATA: 22
+[03/Mar/2022:15:22:07] (index) SELECT COL: PreuHoresDelineant
+[03/Mar/2022:15:22:07] (index) ID Treballador:83
+[03/Mar/2022:15:22:07] (index) ID Projecte:
+[03/Mar/2022:15:22:07] (index) Data:2022-03-03
+[03/Mar/2022:15:22:07] (index) Hores:4
+[03/Mar/2022:15:22:07] (index) KM:0
+[03/Mar/2022:15:22:07] (index) Observacions:
+[03/Mar/2022:15:22:07] (index) CatProf:Delineant
+[03/Mar/2022:15:22:07] (index) Dietes:
+[03/Mar/2022:15:22:07] (index) Preu hora:
+[03/Mar/2022:15:22:07] (index) Preu KM:
+[03/Mar/2022:15:22:07] (index) ID Treballador:83
+[03/Mar/2022:15:22:07] (index) ID Projecte:
+[03/Mar/2022:15:22:07] (index) Data:2022-03-03
+[03/Mar/2022:15:22:07] (index) Hores:3
+[03/Mar/2022:15:22:07] (index) KM:
+[03/Mar/2022:15:22:07] (index) Observacions:
+[03/Mar/2022:15:22:07] (index) CatProf:Delineant
+[03/Mar/2022:15:22:07] (index) Dietes:
+[03/Mar/2022:15:22:07] (index) Preu hora:
+[03/Mar/2022:15:22:07] (index) Preu KM:
+[03/Mar/2022:15:26:27] (index) SELECT DATA: 22
+[03/Mar/2022:15:26:27] (index) SELECT COL: PreuHoresDelineant
+[03/Mar/2022:15:26:27] (index) ID Treballador:83
+[03/Mar/2022:15:26:27] (index) ID Projecte:
+[03/Mar/2022:15:26:27] (index) Data:2022-03-03
+[03/Mar/2022:15:26:27] (index) Hores:4
+[03/Mar/2022:15:26:27] (index) KM:0
+[03/Mar/2022:15:26:27] (index) Observacions:
+[03/Mar/2022:15:26:27] (index) CatProf:Delineant
+[03/Mar/2022:15:26:27] (index) Dietes:
+[03/Mar/2022:15:26:27] (index) Preu hora:
+[03/Mar/2022:15:26:27] (index) Preu KM:
+[03/Mar/2022:15:26:27] (index) ID Treballador:83
+[03/Mar/2022:15:26:27] (index) ID Projecte:
+[03/Mar/2022:15:26:27] (index) Data:2022-03-03
+[03/Mar/2022:15:26:27] (index) Hores:3
+[03/Mar/2022:15:26:27] (index) KM:0
+[03/Mar/2022:15:26:27] (index) Observacions:
+[03/Mar/2022:15:26:27] (index) CatProf:Delineant
+[03/Mar/2022:15:26:27] (index) Dietes:
+[03/Mar/2022:15:26:27] (index) Preu hora:
+[03/Mar/2022:15:26:27] (index) Preu KM:
+[03/Mar/2022:15:26:27] (index) ID Treballador:83
+[03/Mar/2022:15:26:27] (index) ID Projecte:
+[03/Mar/2022:15:26:27] (index) Data:2022-03-03
+[03/Mar/2022:15:26:27] (index) Hores:2
+[03/Mar/2022:15:26:27] (index) KM:
+[03/Mar/2022:15:26:27] (index) Observacions:
+[03/Mar/2022:15:26:27] (index) CatProf:Delineant
+[03/Mar/2022:15:26:27] (index) Dietes:
+[03/Mar/2022:15:26:27] (index) Preu hora:
+[03/Mar/2022:15:26:27] (index) Preu KM:
+[03/Mar/2022:15:27:30] (index) SELECT DATA: 22
+[03/Mar/2022:15:27:30] (index) SELECT COL: PreuHoresDelineant
+[03/Mar/2022:15:27:30] (index) ID Treballador:83
+[03/Mar/2022:15:27:30] (index) ID Projecte:
+[03/Mar/2022:15:27:30] (index) Data:2022-03-03
+[03/Mar/2022:15:27:30] (index) Hores:4
+[03/Mar/2022:15:27:30] (index) KM:0
+[03/Mar/2022:15:27:30] (index) Observacions:
+[03/Mar/2022:15:27:30] (index) CatProf:Delineant
+[03/Mar/2022:15:27:30] (index) Dietes:
+[03/Mar/2022:15:27:30] (index) Preu hora:
+[03/Mar/2022:15:27:30] (index) Preu KM:
+[03/Mar/2022:15:27:30] (index) ID Treballador:83
+[03/Mar/2022:15:27:30] (index) ID Projecte:
+[03/Mar/2022:15:27:30] (index) Data:2022-03-03
+[03/Mar/2022:15:27:30] (index) Hores:3
+[03/Mar/2022:15:27:30] (index) KM:0
+[03/Mar/2022:15:27:30] (index) Observacions:
+[03/Mar/2022:15:27:30] (index) CatProf:Delineant
+[03/Mar/2022:15:27:30] (index) Dietes:
+[03/Mar/2022:15:27:30] (index) Preu hora:
+[03/Mar/2022:15:27:30] (index) Preu KM:
+[03/Mar/2022:15:27:30] (index) ID Treballador:83
+[03/Mar/2022:15:27:30] (index) ID Projecte:
+[03/Mar/2022:15:27:30] (index) Data:2022-03-03
+[03/Mar/2022:15:27:30] (index) Hores:2
+[03/Mar/2022:15:27:30] (index) KM:0
+[03/Mar/2022:15:27:30] (index) Observacions:
+[03/Mar/2022:15:27:30] (index) CatProf:Delineant
+[03/Mar/2022:15:27:30] (index) Dietes:
+[03/Mar/2022:15:27:30] (index) Preu hora:
+[03/Mar/2022:15:27:30] (index) Preu KM:
+[03/Mar/2022:15:27:30] (index) ID Treballador:83
+[03/Mar/2022:15:27:30] (index) ID Projecte:
+[03/Mar/2022:15:27:30] (index) Data:2022-03-03
+[03/Mar/2022:15:27:30] (index) Hores:
+[03/Mar/2022:15:27:30] (index) KM:
+[03/Mar/2022:15:27:30] (index) Observacions:
+[03/Mar/2022:15:27:30] (index) CatProf:Delineant
+[03/Mar/2022:15:27:30] (index) Dietes:
+[03/Mar/2022:15:27:30] (index) Preu hora:
+[03/Mar/2022:15:27:30] (index) Preu KM:
+[03/Mar/2022:15:27:30] (index) ID Treballador:83
+[03/Mar/2022:15:27:30] (index) ID Projecte:
+[03/Mar/2022:15:27:30] (index) Data:2022-03-03
+[03/Mar/2022:15:27:30] (index) Hores:
+[03/Mar/2022:15:27:30] (index) KM:
+[03/Mar/2022:15:27:30] (index) Observacions:
+[03/Mar/2022:15:27:30] (index) CatProf:Delineant
+[03/Mar/2022:15:27:30] (index) Dietes:
+[03/Mar/2022:15:27:30] (index) Preu hora:
+[03/Mar/2022:15:27:30] (index) Preu KM:
+[03/Mar/2022:15:27:30] (index) ID Treballador:83
+[03/Mar/2022:15:27:30] (index) ID Projecte:
+[03/Mar/2022:15:27:30] (index) Data:2022-03-03
+[03/Mar/2022:15:27:30] (index) Hores:
+[03/Mar/2022:15:27:30] (index) KM:
+[03/Mar/2022:15:27:30] (index) Observacions:
+[03/Mar/2022:15:27:30] (index) CatProf:Delineant
+[03/Mar/2022:15:27:30] (index) Dietes:
+[03/Mar/2022:15:27:30] (index) Preu hora:
+[03/Mar/2022:15:27:30] (index) Preu KM:
+[03/Mar/2022:15:27:45] (index) SELECT DATA: 22
+[03/Mar/2022:15:27:45] (index) SELECT COL: PreuHoresDelineant
+[03/Mar/2022:15:27:45] (index) ID Treballador:83
+[03/Mar/2022:15:27:45] (index) ID Projecte:
+[03/Mar/2022:15:27:45] (index) Data:2022-03-03
+[03/Mar/2022:15:27:45] (index) Hores:4
+[03/Mar/2022:15:27:45] (index) KM:0
+[03/Mar/2022:15:27:45] (index) Observacions:
+[03/Mar/2022:15:27:45] (index) CatProf:Delineant
+[03/Mar/2022:15:27:45] (index) Dietes:
+[03/Mar/2022:15:27:45] (index) Preu hora:
+[03/Mar/2022:15:27:45] (index) Preu KM:
+[03/Mar/2022:15:27:45] (index) ID Treballador:83
+[03/Mar/2022:15:27:45] (index) ID Projecte:
+[03/Mar/2022:15:27:45] (index) Data:2022-03-03
+[03/Mar/2022:15:27:45] (index) Hores:3
+[03/Mar/2022:15:27:45] (index) KM:0
+[03/Mar/2022:15:27:45] (index) Observacions:
+[03/Mar/2022:15:27:45] (index) CatProf:Delineant
+[03/Mar/2022:15:27:45] (index) Dietes:
+[03/Mar/2022:15:27:45] (index) Preu hora:
+[03/Mar/2022:15:27:45] (index) Preu KM:
+[03/Mar/2022:15:27:45] (index) ID Treballador:83
+[03/Mar/2022:15:27:45] (index) ID Projecte:
+[03/Mar/2022:15:27:45] (index) Data:2022-03-03
+[03/Mar/2022:15:27:45] (index) Hores:2
+[03/Mar/2022:15:27:45] (index) KM:0
+[03/Mar/2022:15:27:45] (index) Observacions:
+[03/Mar/2022:15:27:45] (index) CatProf:Delineant
+[03/Mar/2022:15:27:45] (index) Dietes:
+[03/Mar/2022:15:27:45] (index) Preu hora:
+[03/Mar/2022:15:27:45] (index) Preu KM:
+[03/Mar/2022:15:27:45] (index) ID Treballador:83
+[03/Mar/2022:15:27:45] (index) ID Projecte:
+[03/Mar/2022:15:27:45] (index) Data:2022-03-03
+[03/Mar/2022:15:27:45] (index) Hores:6
+[03/Mar/2022:15:27:45] (index) KM:0
+[03/Mar/2022:15:27:45] (index) Observacions:
+[03/Mar/2022:15:27:45] (index) CatProf:Delineant
+[03/Mar/2022:15:27:45] (index) Dietes:
+[03/Mar/2022:15:27:45] (index) Preu hora:
+[03/Mar/2022:15:27:45] (index) Preu KM:
+[03/Mar/2022:15:27:45] (index) ID Treballador:83
+[03/Mar/2022:15:27:45] (index) ID Projecte:
+[03/Mar/2022:15:27:45] (index) Data:2022-03-03
+[03/Mar/2022:15:27:45] (index) Hores:8
+[03/Mar/2022:15:27:45] (index) KM:0
+[03/Mar/2022:15:27:45] (index) Observacions:
+[03/Mar/2022:15:27:45] (index) CatProf:Delineant
+[03/Mar/2022:15:27:45] (index) Dietes:
+[03/Mar/2022:15:27:45] (index) Preu hora:
+[03/Mar/2022:15:27:45] (index) Preu KM:
+[03/Mar/2022:15:27:45] (index) ID Treballador:83
+[03/Mar/2022:15:27:45] (index) ID Projecte:
+[03/Mar/2022:15:27:45] (index) Data:2022-03-03
+[03/Mar/2022:15:27:45] (index) Hores:10
+[03/Mar/2022:15:27:45] (index) KM:0
+[03/Mar/2022:15:27:45] (index) Observacions:
+[03/Mar/2022:15:27:45] (index) CatProf:Delineant
+[03/Mar/2022:15:27:45] (index) Dietes:
+[03/Mar/2022:15:27:45] (index) Preu hora:
+[03/Mar/2022:15:27:45] (index) Preu KM:
+[04/Mar/2022:19:45:58] (index) SELECT DATA: 22
+[04/Mar/2022:19:45:58] (index) SELECT COL: PreuHoresDelineant
+[04/Mar/2022:19:45:58] (index) ID Treballador:83
+[04/Mar/2022:19:45:58] (index) ID Projecte:
+[04/Mar/2022:19:45:58] (index) Data:2022-03-04
+[04/Mar/2022:19:45:58] (index) Hores:
+[04/Mar/2022:19:45:58] (index) KM:
+[04/Mar/2022:19:45:58] (index) Observacions:
+[04/Mar/2022:19:45:58] (index) CatProf:Delineant
+[04/Mar/2022:19:45:58] (index) Dietes:
+[04/Mar/2022:19:45:58] (index) Preu hora:
+[04/Mar/2022:19:45:58] (index) Preu KM:
+[04/Mar/2022:21:40:33] (index) SELECT DATA: 22
+[04/Mar/2022:21:40:33] (index) SELECT COL: PreuHoresDelineant
+[04/Mar/2022:21:40:33] (index) ID Treballador:83
+[04/Mar/2022:21:40:33] (index) ID Projecte:
+[04/Mar/2022:21:40:33] (index) Data:2022-03-01
+[04/Mar/2022:21:40:33] (index) Hores:3
+[04/Mar/2022:21:40:33] (index) KM:3,2
+[04/Mar/2022:21:40:33] (index) Observacions:
+[04/Mar/2022:21:40:33] (index) CatProf:Delineant
+[04/Mar/2022:21:40:33] (index) Dietes:
+[04/Mar/2022:21:40:33] (index) Preu hora:
+[04/Mar/2022:21:40:33] (index) Preu KM:
+[09/Mar/2022:15:07:42] (index) SELECT DATA: 22
+[09/Mar/2022:15:07:42] (index) SELECT COL: PreuHoresDelineant
+[09/Mar/2022:15:07:42] (index) ID Treballador:83
+[09/Mar/2022:15:07:42] (index) ID Projecte:
+[09/Mar/2022:15:07:42] (index) Data:2022-03-09
+[09/Mar/2022:15:07:42] (index) Hores:1
+[09/Mar/2022:15:07:42] (index) KM:1
+[09/Mar/2022:15:07:42] (index) Observacions:
+[09/Mar/2022:15:07:42] (index) CatProf:Delineant
+[09/Mar/2022:15:07:42] (index) Dietes:
+[09/Mar/2022:15:07:42] (index) Preu hora:
+[09/Mar/2022:15:07:42] (index) Preu KM:
+[11/Mar/2022:17:52:55] (index) SELECT DATA: 22
+[11/Mar/2022:17:52:55] (index) SELECT COL: PreuHoresDelineant
+[11/Mar/2022:17:52:55] (index) ID Treballador:83
+[11/Mar/2022:17:52:55] (index) ID Projecte:
+[11/Mar/2022:17:52:55] (index) Data:2022-03-11
+[11/Mar/2022:17:52:55] (index) Hores:7,6
+[11/Mar/2022:17:52:55] (index) KM:
+[11/Mar/2022:17:52:55] (index) Observacions:
+[11/Mar/2022:17:52:55] (index) CatProf:Delineant
+[11/Mar/2022:17:52:55] (index) Dietes:
+[11/Mar/2022:17:52:55] (index) Preu hora:
+[11/Mar/2022:17:52:55] (index) Preu KM:
+[16/Mar/2022:17:20:51] (index) SELECT DATA: 22
+[16/Mar/2022:17:20:51] (index) SELECT COL: PreuHoresDelineant
+[16/Mar/2022:17:20:51] (index) ID Treballador:83
+[16/Mar/2022:17:20:51] (index) ID Projecte:
+[16/Mar/2022:17:20:51] (index) Data:2022-03-16
+[16/Mar/2022:17:20:51] (index) Hores:4
+[16/Mar/2022:17:20:51] (index) KM:
+[16/Mar/2022:17:20:51] (index) Observacions:
+[16/Mar/2022:17:20:51] (index) CatProf:Delineant
+[16/Mar/2022:17:20:51] (index) Dietes:
+[16/Mar/2022:17:20:51] (index) Preu hora:
+[16/Mar/2022:17:20:51] (index) Preu KM:
+[17/Mar/2022:16:42:31] (index) SELECT DATA: 22
+[17/Mar/2022:16:42:31] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:16:42:31] (index) ID Treballador:83
+[17/Mar/2022:16:42:31] (index) ID Projecte:
+[17/Mar/2022:16:42:31] (index) Data:2022-03-03
+[17/Mar/2022:16:42:31] (index) Hores:4,5
+[17/Mar/2022:16:42:31] (index) KM:0
+[17/Mar/2022:16:42:31] (index) Observacions:
+[17/Mar/2022:16:42:31] (index) CatProf:Delineant
+[17/Mar/2022:16:42:31] (index) Dietes:
+[17/Mar/2022:16:42:31] (index) Preu hora:
+[17/Mar/2022:16:42:31] (index) Preu KM:
+[17/Mar/2022:16:42:42] (index) SELECT DATA: 22
+[17/Mar/2022:16:42:42] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:16:42:42] (index) ID Treballador:83
+[17/Mar/2022:16:42:42] (index) ID Projecte:
+[17/Mar/2022:16:42:42] (index) Data:2022-03-03
+[17/Mar/2022:16:42:42] (index) Hores:4.5
+[17/Mar/2022:16:42:42] (index) KM:0
+[17/Mar/2022:16:42:42] (index) Observacions:
+[17/Mar/2022:16:42:42] (index) CatProf:Delineant
+[17/Mar/2022:16:42:42] (index) Dietes:
+[17/Mar/2022:16:42:42] (index) Preu hora:
+[17/Mar/2022:16:42:42] (index) Preu KM:
+[17/Mar/2022:16:52:50] (index) SELECT DATA: 22
+[17/Mar/2022:16:52:50] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:16:52:50] (index) ID Treballador:83
+[17/Mar/2022:16:52:50] (index) ID Projecte:
+[17/Mar/2022:16:52:50] (index) Data:2022-03-04
+[17/Mar/2022:16:52:50] (index) Hores:2,5
+[17/Mar/2022:16:52:50] (index) KM:0
+[17/Mar/2022:16:52:50] (index) Observacions:
+[17/Mar/2022:16:52:50] (index) CatProf:Delineant
+[17/Mar/2022:16:52:50] (index) Dietes:
+[17/Mar/2022:16:52:50] (index) Preu hora:
+[17/Mar/2022:16:52:50] (index) Preu KM:
+[17/Mar/2022:16:53:00] (index) SELECT DATA: 22
+[17/Mar/2022:16:53:00] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:16:53:00] (index) ID Treballador:83
+[17/Mar/2022:16:53:00] (index) ID Projecte:
+[17/Mar/2022:16:53:00] (index) Data:2022-03-04
+[17/Mar/2022:16:53:00] (index) Hores:2,50
+[17/Mar/2022:16:53:00] (index) KM:0
+[17/Mar/2022:16:53:00] (index) Observacions:
+[17/Mar/2022:16:53:00] (index) CatProf:Delineant
+[17/Mar/2022:16:53:00] (index) Dietes:
+[17/Mar/2022:16:53:00] (index) Preu hora:
+[17/Mar/2022:16:53:00] (index) Preu KM:
+[17/Mar/2022:16:53:13] (index) SELECT DATA: 22
+[17/Mar/2022:16:53:13] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:16:53:13] (index) ID Treballador:83
+[17/Mar/2022:16:53:13] (index) ID Projecte:
+[17/Mar/2022:16:53:13] (index) Data:2022-03-04
+[17/Mar/2022:16:53:13] (index) Hores:2,25
+[17/Mar/2022:16:53:13] (index) KM:0
+[17/Mar/2022:16:53:13] (index) Observacions:
+[17/Mar/2022:16:53:13] (index) CatProf:Delineant
+[17/Mar/2022:16:53:13] (index) Dietes:
+[17/Mar/2022:16:53:13] (index) Preu hora:
+[17/Mar/2022:16:53:13] (index) Preu KM:
+[17/Mar/2022:16:57:16] (index) SELECT DATA: 22
+[17/Mar/2022:16:57:16] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:16:57:16] (index) ID Treballador:83
+[17/Mar/2022:16:57:16] (index) ID Projecte:
+[17/Mar/2022:16:57:16] (index) Data:2022-03-04
+[17/Mar/2022:16:57:16] (index) Hores:2,25
+[17/Mar/2022:16:57:16] (index) KM:0
+[17/Mar/2022:16:57:16] (index) Observacions:
+[17/Mar/2022:16:57:16] (index) CatProf:Delineant
+[17/Mar/2022:16:57:16] (index) Dietes:
+[17/Mar/2022:16:57:16] (index) Preu hora:
+[17/Mar/2022:16:57:16] (index) Preu KM:
+[17/Mar/2022:16:57:16] (index) ID Treballador:83
+[17/Mar/2022:16:57:16] (index) ID Projecte:
+[17/Mar/2022:16:57:16] (index) Data:2022-03-04
+[17/Mar/2022:16:57:16] (index) Hores:1,5
+[17/Mar/2022:16:57:16] (index) KM:
+[17/Mar/2022:16:57:16] (index) Observacions:
+[17/Mar/2022:16:57:16] (index) CatProf:Delineant
+[17/Mar/2022:16:57:16] (index) Dietes:
+[17/Mar/2022:16:57:16] (index) Preu hora:
+[17/Mar/2022:16:57:16] (index) Preu KM:
+[17/Mar/2022:19:06:52] (index) SELECT DATA: 22
+[17/Mar/2022:19:06:52] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:19:06:52] (index) ID Treballador:87
+[17/Mar/2022:19:06:52] (index) ID Projecte:
+[17/Mar/2022:19:06:52] (index) Data:2022-03-01
+[17/Mar/2022:19:06:52] (index) Hores:3
+[17/Mar/2022:19:06:52] (index) KM:
+[17/Mar/2022:19:06:52] (index) Observacions:
+[17/Mar/2022:19:06:52] (index) CatProf:Delineant
+[17/Mar/2022:19:06:52] (index) Dietes:
+[17/Mar/2022:19:06:52] (index) Preu hora:
+[17/Mar/2022:19:06:52] (index) Preu KM:
+[17/Mar/2022:19:14:06] (index) SELECT DATA: 22
+[17/Mar/2022:19:14:06] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:19:14:06] (index) ID Treballador:87
+[17/Mar/2022:19:14:06] (index) ID Projecte:
+[17/Mar/2022:19:14:06] (index) Data:2022-03-17
+[17/Mar/2022:19:14:06] (index) Hores:4
+[17/Mar/2022:19:14:06] (index) KM:
+[17/Mar/2022:19:14:06] (index) Observacions:
+[17/Mar/2022:19:14:06] (index) CatProf:Delineant
+[17/Mar/2022:19:14:06] (index) Dietes:
+[17/Mar/2022:19:14:06] (index) Preu hora:
+[17/Mar/2022:19:14:06] (index) Preu KM:
+[17/Mar/2022:19:16:19] (index) SELECT DATA: 22
+[17/Mar/2022:19:16:19] (index) SELECT COL: PreuHoresDelineant
+[17/Mar/2022:19:16:19] (index) ID Treballador:87
+[17/Mar/2022:19:16:19] (index) ID Projecte:
+[17/Mar/2022:19:16:19] (index) Data:2022-03-17
+[17/Mar/2022:19:16:19] (index) Hores:4,00
+[17/Mar/2022:19:16:19] (index) KM:0
+[17/Mar/2022:19:16:19] (index) Observacions:
+[17/Mar/2022:19:16:19] (index) CatProf:Delineant
+[17/Mar/2022:19:16:19] (index) Dietes:
+[17/Mar/2022:19:16:19] (index) Preu hora:
+[17/Mar/2022:19:16:19] (index) Preu KM:
+[17/Mar/2022:19:16:19] (index) ID Treballador:87
+[17/Mar/2022:19:16:19] (index) ID Projecte:
+[17/Mar/2022:19:16:19] (index) Data:2022-03-17
+[17/Mar/2022:19:16:19] (index) Hores:2
+[17/Mar/2022:19:16:19] (index) KM:
+[17/Mar/2022:19:16:19] (index) Observacions:
+[17/Mar/2022:19:16:19] (index) CatProf:Delineant
+[17/Mar/2022:19:16:19] (index) Dietes:
+[17/Mar/2022:19:16:19] (index) Preu hora:
+[17/Mar/2022:19:16:19] (index) Preu KM:
