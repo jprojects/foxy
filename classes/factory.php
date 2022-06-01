@@ -214,6 +214,17 @@ abstract class factory
       return $instance;
     }
 
+    public static function getTools()
+    {
+      $path = dirname(__FILE__).'/tools.php';
+    	if (file_exists($path))
+  		{
+  			include_once $path;
+  			$instance = new Tools;
+  		}
+      return $instance;
+    }
+	
     /**
      * Method to get a instance of the application class
      * @return object

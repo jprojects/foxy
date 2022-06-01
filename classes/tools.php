@@ -14,7 +14,7 @@ defined('_Afi') or die ('restricted access');
 
 class Tools
 {
-	public static function getBetweenExpression($field, $starting_date, $ending_date)
+	public function getBetweenExpression($field, $starting_date, $ending_date)
 	{
 		$starting_date = str_replace('/' , '-' , $starting_date);
 		$ending_date = str_replace('/' , '-' , $ending_date);
