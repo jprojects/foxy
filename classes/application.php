@@ -239,7 +239,7 @@ class Application
 		}
 
         //set default value
-        if(empty($var)) {
+        if(!isset($var)) {
             $var = $default;
         }
 
