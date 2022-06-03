@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/dist/assets/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/datatables/datatables.min.css"/>
     <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/messenger-hubspot/build/css/messenger.css">
     <link rel="stylesheet" href="<?= $config->site; ?>/template/<?= $config->template; ?>/vendor/messenger-hubspot/build/css/messenger-theme-flat.css">
