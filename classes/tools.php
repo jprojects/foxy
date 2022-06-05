@@ -22,7 +22,7 @@ class Tools
 	}
 	
 	public function UTF8ToW1252($cadena) {
-		return iconv('UTF-8', 'windows-1252', '$cadena);
+		return iconv('UTF-8', 'windows-1252', $cadena);
 	}
 }
 ?>
