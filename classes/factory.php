@@ -229,13 +229,13 @@ abstract class factory
      * Method to get a instance of the application class
      * @return object
     */
-    public static function getDate()
+    public static function getDates()
     {
-  		$path = dirname(__FILE__).DS.'date.php';
+  		$path = dirname(__FILE__).DS.'dates.php';
   		if (file_exists($path))
   		{
   			include_once $path;
-  			$instance = new Date;
+  			$instance = new Dates;
   		}
       return $instance;
     }
