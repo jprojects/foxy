@@ -50,7 +50,6 @@ $page   = $app->getVar('page', 1);
             <thead>
               <tr>
                 <th>Name</th>
-                <th>DNI</th>
                 <th>Email</th>
                 <th>Usergroup</th>
                 <th>Esborrar</th>
@@ -60,12 +59,11 @@ $page   = $app->getVar('page', 1);
             <tbody>
               <?php foreach($list as $usr) : ?>
               <tr>
-                <td><?= $usr->Treballadors; ?></td>
-                <td><?= $usr->DNI; ?></td>
-                <td><?= $usr->eMail; ?></td>
-                <td><?= $usr->_level; ?></td>
-                <td><a href="index.php?view=users&task=removeUser&id=<?= $usr->Id; ?>"><i class="bi bi-trash-fill"></i></a></td>
-                <td><a href="index.php?view=users&layout=edit&id=<?= $usr->Id; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                <td><?= $usr->username; ?></td>
+                <td><?= $usr->email; ?></td>
+                <td><?= $usr->level; ?></td>
+                <td><a href="index.php?view=users&task=removeUser&id=<?= $usr->id; ?>"><i class="bi bi-trash-fill"></i></a></td>
+                <td><a href="index.php?view=users&layout=edit&id=<?= $usr->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
               </tr>
               <?php endforeach; ?>
             </tbody>

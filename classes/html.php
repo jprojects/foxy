@@ -152,7 +152,7 @@ class Html
         $html   = '';
 
         if($collapse == true) {
-            $html  .= '<a class="btn btn-primary mb-2" data-toggle="collapse" href="#collapseFilters" role="button" aria-expanded="false" aria-controls="collapseFilters">Filtres</a>';
+            $html  .= '<a class="btn btn-primary mb-2" data-bs-toggle="collapse" href="#collapseFilters" role="button" aria-expanded="false" aria-controls="collapseFilters">Filtres</a>';
             $html  .= '<div class="collapse" id="collapseFilters">';
         }
         $html  .= '<div class="form-inline my-3">';
@@ -238,18 +238,22 @@ class Html
         $html = "";
         $i = 0;
 
-        if($user->_level == '' && $user->_level == null) return;
+        if($user->level == '' && $user->level == null) return;
 
         //get permisos
-        $db->query('SELECT permisos FROM #_usergroups_map WHERE usergroup_id = '.$user->_level);
-        $permisos = json_decode($db->loadResult());
+        if($user->level != 1) {
+            $db->query('SELECT permisos FROM #_usergroups_map WHERE usergroup_id = '.$user->level);
+            $permisos = json_decode($db->loadResult());
+        }
 
         foreach($fields as $field) {
 
             //check permissions...
-            if($field[$i]->id == 'btn_new' && $permisos->new == 0) { continue; }
-            if($field[$i]->id == 'btn_edit' && $permisos->edit == 0) { continue; }
-            if($field[$i]->id == 'btn_delete' && $permisos->delete == 0) { continue; }
+            if($user->level != 1) {
+                if($field[$i]->id == 'btn_new' && $permisos->new == 0) { continue; }
+                if($field[$i]->id == 'btn_edit' && $permisos->edit == 0) { continue; }
+                if($field[$i]->id == 'btn_delete' && $permisos->delete == 0) { continue; }
+            }
 
             if($field->getName() == "button"){
                 $field[$i]->icon == "" ? $icon = "" : $icon = "<i class='fa ". $field[$i]->icon. "'></i>&nbsp;";
@@ -297,8 +301,6 @@ class Html
                 if($field[0]->type != 'hidden') $html .= "<div id='".$field[0]->name."-field' class='mb-3'>";
                 if($field[0]->type != 'hidden' && $field[0]->label != "") $html .= "<label for='".$field[0]->id."'><a class='hasTip' title='".$lang->get($field[0]->placeholder)."'>".$lang->get($field[0]->label).$star."</a></label>";
                 if($field[0]->type != 'hidden' && $field[0]->label != "") $html .= "<div class='controls'>";
-                if($default == 'ENTRADA' && $name == 'TipusMoviment') { $classe = 'bg-success text-light'; }
-                if($default == 'SORTIDA' && $name == 'TipusMoviment') { $classe = 'bg-danger text-light'; }
                 $html .= "<input type='".$field[0]->type."' id='".$field[0]->id."' value='".str_replace("'","&#39;",$default)."' name='".$field[0]->name."'";
                 if($field[0]->type != 'hidden') $html .= $disabled." ".$onchange." ".$required." ".$onkeyup." ".$readonly." placeholder='".$lang->get($field[0]->placeholder)."' autocomplete='off'";
                 $html .= " class='form-control ".$field[0]->classe." ".$classe." ".$class."'>";

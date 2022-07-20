@@ -296,17 +296,19 @@ class Application
         } else {
 
             //check permissions
-            $groupId = $user->_level;
-            $vista   = $this->view;
-            //A la DB si es tracta d'un layout entrarem la vista seguit de un punt i el nom del layout
-            if($this->layout != null) { $vista = $vista.'.'.$this->layout; }
-            $db->query('SELECT permisos FROM #_usergroups_map WHERE vista = '.$db->quote($vista));
-            $permisos = json_decode($db->loadResult());
+            if($user->level != 1) {
+                $groupId = $user->level;
+                $vista   = $this->view;
+                //A la DB si es tracta d'un layout entrarem la vista seguit de un punt i el nom del layout
+                if($this->layout != null) { $vista = $vista.'.'.$this->layout; }
+                $db->query('SELECT permisos FROM #_usergroups_map WHERE vista = '.$db->quote($vista));
+                $permisos = json_decode($db->loadResult());
 
-            if($permisos->access != 1) {
-                $this->setMessage('No tens permissos per veure aquesta secció', 'danger');
-                $this->redirect($config->site.'/index.php?view=home');
-                exit();
+                if($permisos->access != 1) {
+                    $this->setMessage('No tens permissos per veure aquesta secció', 'danger');
+                    $this->redirect($config->site.'/index.php?view=home');
+                    exit();
+                }
             }
 
             $path = CWPATH_COMPONENT.DS.'views'.DS.$this->view.DS.'tmpl'.DS.$this->view.'.php';

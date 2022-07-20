@@ -52,7 +52,7 @@ $view   = factory::getApplication()->getVar('view', 'home');
 						</li>
 					</ul>
 				</li>
-				<?php if($user->_level == 1) : ?>
+				<?php if($user->level == 1) : ?>
 				<li class="sidebar-item has-sub">
 					<a href="#" class='sidebar-link'>
 						<i class="bi bi-stack"></i>

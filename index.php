@@ -10,7 +10,7 @@
  *
 */
 
-session_name('CRGestio');
+session_name('Foxy');
 session_start();
 define('_Afi', 1);
 error_reporting(E_ALL ^ E_NOTICE);
@@ -29,7 +29,7 @@ $lang   	= factory::getLanguage();
 $html   	= factory::getHtml();
 $url    	= factory::getUrl();
 $session 	= factory::getSession();
-$settings   = factory::getSettings();
+//$settings   = factory::getSettings();
 $log 		= factory::getLog();
 
 //$log->lwrite('Init app');

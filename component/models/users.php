@@ -16,15 +16,15 @@ include('includes/model.php');
 
 class users extends model
 {
-  private $table  = '#_Treballadors';
+   private $table   = '#_users';
 	private $view   = 'users';
-	private $key    = 'Id';
-	private $order  = 'Id';
+	private $key    = 'id';
+	private $order  = 'id';
 	private $dir    = 'DESC';
-	private $rows   = 'SELECT COUNT(u.Id) FROM #_Treballadors AS u';
-	private $sql    = 'SELECT u.* FROM #_Treballadors AS u';
+	private $rows   = 'SELECT COUNT(u.Id) FROM #_users AS u';
+	private $sql    = 'SELECT u.* FROM #_users AS u';
 
-  public function getList()
+    public function getList()
 	{
 		$db  	= factory::getDatabase();
 		$user 	= factory::getUser();
@@ -39,7 +39,7 @@ class users extends model
 
 		unset($_GET['page'], $_GET['view'], $_GET['orderDir'], $_GET['colDir']);
 
-    $offset = ($page-1) * $no_of_records_per_page;
+    	$offset = ($page-1) * $no_of_records_per_page;
 
 		//get all url vars from filters
 		$i = 0;
@@ -71,12 +71,12 @@ class users extends model
 		$db->query($this->rows.$filters);
 		$count_rows = $db->loadResult();
 
-    if($count_rows > 0) {
+    	if($count_rows > 0) {
 			$this->sql .= $filters;
-		  $this->sql .= ' ORDER BY u.'.$this->order.' '.$this->dir;
-      $this->sql .= $db->limit($offset, $no_of_records_per_page);
+		  	$this->sql .= ' ORDER BY u.'.$this->order.' '.$this->dir;
+      		$this->sql .= $db->limit($offset, $no_of_records_per_page);
 			if($config->debug == 1) { echo 'getList: '.$this->sql; }
-		  $db->query($this->sql);
+		  	$db->query($this->sql);
 		}
 		$_SESSION['total_pages'] = ceil($count_rows / $no_of_records_per_page);
 		//echo $this->sql;
@@ -94,18 +94,18 @@ class users extends model
         $id = $app->getVar('id', 0);
   
         $obj = new stdClass();
-        $obj->Treballadors  = $app->getVar('username');
-        $obj->eMail         = $app->getVar('email');
+        $obj->username  = $app->getVar('username');
+        $obj->email     = $app->getVar('email');
         if($app->getVar('password', '') != '') {
-          $obj->_password   = $app->encryptPassword($app->getVar('password'));
+          $obj->_password  = $app->encryptPassword($app->getVar('password'));
         }
-        $obj->_level        = $app->getVar('usergroup');
+        $obj->level        = $app->getVar('usergroup');
   
         if($id == 0) {
-          $obj->_language      = 'ca-es';
-          $result = $db->insertRow("#_Treballadors", $obj);
+          $obj->language   = 'ca-es';
+          $result = $db->insertRow("#_users", $obj);
         } else {
-          $result = $db->updateRow("#_Treballadors", $obj, 'Id', $id);
+          $result = $db->updateRow("#_users", $obj, 'id', $id);
         }
   
         if($result) {
@@ -130,7 +130,7 @@ class users extends model
 
         $id   = $app->getVar('id', 0, 'get');
   
-        $result = $db->query('DELETE FROM `#_Treballadors` WHERE Id = '.$id);
+        $result = $db->query('DELETE FROM `#_users` WHERE id = '.$id);
   
         if($result) {
           $app->setMessage($lang->get('CW_USERS_SAVE_SUCCESS'), 'success');

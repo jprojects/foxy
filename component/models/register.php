@@ -26,7 +26,7 @@ class register extends model
             $db         = factory::getDatabase();
             $email      = $_GET['email'];
 
-            $db->query('SELECT Id FROM `#_Treballadors` WHERE eMail = '.$db->quote($email));
+            $db->query('SELECT id FROM `#_users` WHERE email = '.$db->quote($email));
             if($id = $db->loadResult()) {
                 echo false;
             } else {
@@ -55,7 +55,7 @@ class register extends model
             }
 
             //check if email exists...
-            $db->query('SELECT Id FROM `#_Treballadors` WHERE eMail = '.$db->quote($_POST['email']));
+            $db->query('SELECT id FROM `#_users` WHERE email = '.$db->quote($_POST['email']));
             if($id = $db->loadResult()) {
                 $app->setMessage($lang->get('El email ya existe, por favor elige otro'), 'danger');
                 $app->redirect($config->site.'/index.php?view=register');
@@ -68,13 +68,13 @@ class register extends model
                 unset($_POST['auth_token']);
 
                 //create user
-                $_POST['eMail']         = $_POST['email'];
-                $_POST['_password']      = $app->encryptPassword($_POST['password']);
+                $_POST['email']         = $_POST['email'];
+                $_POST['password']      = $app->encryptPassword($_POST['password']);
                 $_POST['level']         = 2;
                 $_POST['language']      = 'ca-es';
-                $result = $db->insertRow('#_Treballadors', $_POST);
+                $result = $db->insertRow('#_users', $_POST);
 
-                $lastid = $db->lastId();
+                $lastid = $db->lastid();
 
                 if($result && $result2) {
                     //send a confirmation to the user...
@@ -153,11 +153,11 @@ class register extends model
 
             $email  = $db->quote($_POST['email']);
 
-            $db->query("SELECT Id FROM `#_Treballadors` WHERE eMail = $email");
+            $db->query("SELECT id FROM `#_users` WHERE email = $email");
             $id = $db->loadResult();
             $newpassword = uniqid();
             $password = $app->encryptPassword($newpassword);
-            $result = $db->updateField('#_Treballadors', '_password', $password, 'id', $id);
+            $result = $db->updateField('#_users', 'password', $password, 'id', $id);
             //send email to user...
             if($result) {
                 //send a confirmation to the user...
@@ -201,12 +201,12 @@ class register extends model
                 $app->redirect($config->site.'/index.php?view=home');
             }
 
-            $db->query("SELECT _password FROM #_Treballadors WHERE eMail = ".$db->quote($email));
+            $db->query("SELECT password FROM #_users WHERE email = ".$db->quote($email));
             $dbpass = $db->loadResult();
             
             if($app->decryptPassword($password, $dbpass)) {
 
-                $db->query("SELECT Id FROM #_Treballadors WHERE eMail = ".$db->quote($email));
+                $db->query("SELECT id FROM #_users WHERE email = ".$db->quote($email));
                 if($id = $db->loadResult()) {
                     
                     $user->setAuth($id);
@@ -214,7 +214,7 @@ class register extends model
                     //register session
                     //$session->createSession();
 
-                    $app->setMessage($lang->replace('CW_LOGIN_SUCCESS_MSG',  $user->Treballadors), 'success');
+                    $app->setMessage($lang->replace('CW_LOGIN_SUCCESS_MSG',  $user->username), 'success');
 
                     $return == '' ? $authUrl = $config->site.$config->login_redirect : $authUrl = base64_decode($return);
                     $app->redirect($authUrl);
@@ -240,9 +240,10 @@ class register extends model
             $app        = factory::getApplication();
             $session    = factory::getSession();
             $user       = factory::getUser();
+            $db         = factory::getDatabase();
 
             //esborrem sessió de la DB...
-            //$db->query('DELETE FROM `#_sessions` WHERE userid = '.$user->id);
+            $db->query('DELETE FROM `#_sessions` WHERE userid = '.$user->id);
 
             //register session
             $session->destroySession();
@@ -272,7 +273,7 @@ class register extends model
 
             //if token...
             if(isset($_GET['token'])) {
-                $result = $db->updateField('#_Treballadors', 'block', 0, 'token', $_GET['token']);
+                $result = $db->updateField('#_users', 'block', 0, 'token', $_GET['token']);
                 if($result) {
                     if($config->admin_mails == 1) {
                         $this->sendAdminMail('Nuevo registro en '.$sitename, "Un nuevo usuario se ha registrado en ".$sitename.".");

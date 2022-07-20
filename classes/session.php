@@ -40,7 +40,7 @@ class Session {
 		$user = factory::getUser();
 
 		$s = new stdClass();
-		$s->userid 			= $user->Id;
+		$s->userid 			= $user->id;
 		$s->ssid 			= session_id();
 		$s->lastvisitDate 	= gmdate(date('Y-m-d H:i:s'));
 		$db->insertRow('#_sessions', $s);
@@ -51,7 +51,7 @@ class Session {
 		$db = factory::getDatabase();
 		$user = factory::getUser();
 		
-		$db->query('DELETE FROM #_sessions WHERE userid = '.$user->Id);
+		$db->query('DELETE FROM #_sessions WHERE userid = '.$user->id);
 		$_SESSION = array();
 		session_destroy ();
 		
