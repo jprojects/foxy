@@ -1179,4 +1179,18 @@ class Html
         }
         return $html;
     }
+	
+	public function getViewLink($view, $pagina, $ordreColumna, $ascDesc, $filtres) {
+		$link = "index.php?view=$view&page=$pagina&orderDir=$ascDesc&orderCol=$ordreColumna";
+		$str_filtres = '';
+		foreach($filtres as $key => $value) {
+			if (substr($key, 0, 7)=='filter_') {
+				$str_filtres = $str_filtres . "&$key=$value";
+			}
+		}
+		if ($str_filtres!='') {
+			$link .= "&$str_filtres";
+		}
+		return $link;
+	}
 }
