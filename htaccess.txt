@@ -1,6 +1,31 @@
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymlinks
+Options -Indexes
 
 ## No directory listings
-IndexIgnore *
+<IfModule mod_autoindex.c>
+	IndexIgnore *
+</IfModule>
+
+## Suppress mime type detection in browsers for unknown types
+<IfModule mod_headers.c>
+	Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+## Protect against certain cross-origin requests. More information can be found here:
+## https://developer.mozilla.org/en-US/docs/Web/HTTP/Cross-Origin_Resource_Policy_(CORP)
+## https://web.dev/why-coop-coep/
+#<IfModule mod_headers.c>
+#	Header always set Cross-Origin-Resource-Policy "same-origin"
+#	Header always set Cross-Origin-Embedder-Policy "require-corp"
+#</IfModule>
+
+## Disable inline JavaScript when directly opening SVG files or embedding them with the object-tag
+<FilesMatch "\.svg$">
+  <IfModule mod_headers.c>
+    Header always set Content-Security-Policy "script-src 'none'"
+  </IfModule>
+</FilesMatch>
 
 ## Mod_rewrite in use.
 RewriteEngine On
@@ -13,13 +38,13 @@ RewriteEngine On
 # RewriteBase /
 
 # new rule to handle index.php?view=cpanel&layout=edit&id=80
-RewriteRule ^([^/]*)/([^/]*)/([^/]*)\.html$ /test/index.php?view=$1&layout=$2&id=$3 [L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)\.html$ /index.php?view=$1&layout=$2&id=$3 [L]
 
 # new rule to handle index.php?view=cpanel&layout=edit
-RewriteRule ^([^/]*)/([^/]*)\.html$ /test/index.php?view=$1&layout=$2 [L]
+RewriteRule ^([^/]*)/([^/]*)\.html$ /index.php?view=$1&layout=$2 [L]
 
 # your existing rule to handle index.php?view=cpanel
-RewriteRule ^([^/]*)\.html$ /test/index.php?view=$1 [L]
+RewriteRule ^([^/]*)\.html$ /index.php?view=$1 [L]
 
 #Error handling
 ErrorDocument 400 /error.php?e=400

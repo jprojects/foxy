@@ -1,0 +1,24 @@
+# If the site is installed within a folder
+# eg www.example.com/xxx/ then the robots.txt file
+# MUST be moved to the site root
+# eg www.example.com/robots.txt
+# AND the folder name MUST be prefixed to all of the
+# paths.
+# eg the Disallow rule for the /assets/ folder MUST
+# be changed to read
+# Disallow: /xxx/assets/
+#
+# For more information about the robots.txt standard, see:
+# https://www.robotstxt.org/orig.html
+
+User-agent: *
+Disallow: /assets/
+Disallow: /classes/
+Disallow: /cli/
+Disallow: /component/
+Disallow: /includes/
+Disallow: /languages/
+Disallow: /libraries/
+Disallow: /logs/
+Disallow: /modules/
+Disallow: /plugins/
