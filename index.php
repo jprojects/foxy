@@ -29,7 +29,7 @@ $lang   	= factory::getLanguage();
 $html   	= factory::getHtml();
 $url    	= factory::getUrl();
 $session 	= factory::getSession();
-//$settings   = factory::getSettings();
+//$settings   	= factory::getSettings();
 $log 		= factory::getLog();
 
 //$log->lwrite('Init app');

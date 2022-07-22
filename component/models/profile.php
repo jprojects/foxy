@@ -29,13 +29,9 @@ class profile extends model
       if($_POST['password'] != '') {
         $obj->_password  = $app->encryptPassword($_POST['password']);
       }
-      //$obj->language  = $_POST['language'];
-      $obj->DNI                         = $_POST['DNI'];
-      $obj->Treballadors                = $_POST['Treballadors'];
-      $obj->poblacio                    = $_POST['poblacio'];
-      $obj->CategoriaProfessional       = $_POST['CategoriaProfessional'];
-      $obj->_apikey                     = $_POST['apikey'];
-      $obj->_language                   = $_POST['language'];
+
+      $obj->apikey                     = $_POST['apikey'];
+      $obj->language                   = $_POST['language'];
 
       $result = $db->updateRow("#_users", $obj, 'id', $user->id);
 

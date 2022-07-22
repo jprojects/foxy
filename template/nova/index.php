@@ -79,7 +79,7 @@
               <p>Imatge diària gràcies a Bing</p>
             </div>
             <div class="col-sm-4 text-right">
-              <p>Version <a href="index.php?view=about&layout=log"><?= $app->getVersion(); ?></a> &middot; <a href="index.php?view=about&layout=api">API</a> &middot; <?php if($user->getAuth() && $settings->show_coins == 1) : ?><a href="index.php?view=about&layout=coins"><span class="badge bg-warning text-dark" title="<?= $user->coins; ?> coins earned"><?= $user->coins; ?> <img src="assets/img/coin.png" alt="coin" width="10" height="10"></span></a><?php endif; ?></p>
+              <p>Version <a href="index.php?view=about&layout=log"><?= $app->getVersion(); ?></a> &middot; <a href="index.php?view=about&layout=api">API</a></p>
             </div>
           </div>
         </div>

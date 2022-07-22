@@ -29,7 +29,7 @@ $settings   = factory::getSettings();
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <?php if($user->getAuth()) : ?>
+ 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-3">
@@ -38,26 +38,13 @@ $settings   = factory::getSettings();
                             <label class="nav-link form-check-label" for="darkmode"><?php if($settings->dark_mode == 1) : ?><i class="bi bi-sun-fill bi-sub fs-4 text-gray-600"></i><?php else: ?><i class="bi bi-moon-fill bi-sub fs-4 text-gray-600"></i><?php endif; ?></label>
                         </div>
                     </li>
-                    <?php if($settings->show_messages == 1) : ?>
-                    <li class="nav-item dropdown me-3">
-                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class='bi bi-bell bi-sub fs-4 text-gray-600'></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li>
-                                <h6 class="dropdown-header">Notificacions</h6>
-                            </li>
-                            <li><a class="dropdown-item">No notification available</a></li>
-                        </ul>
-                    </li>
                 </ul>
-                <?php endif; ?>
+ 
                 <div class="dropdown">
                     <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="user-menu d-flex">
                             <div class="user-name text-end me-3">
-                                <h6 class="mb-0 nav-link text-gray-600"><?= $user->Treballadors; ?></h6>
+                                <h6 class="mb-0 nav-link text-gray-600"><?= $user->username; ?></h6>
                             </div>
                             <div class="user-img d-flex align-items-center">
                                 <div class="avatar avatar-md">
@@ -76,7 +63,7 @@ $settings   = factory::getSettings();
                     </ul>
                 </div>
             </div>
-            <?php endif; ?>
+
         </div>
     </nav>
 </header>

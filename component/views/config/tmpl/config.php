@@ -44,9 +44,6 @@ defined('_Afi') or die ('restricted access');
                     <div class="card-body">
                       <form class="form-signin needs-validation" id="settings-form" action='<?= $config->site; ?>/index.php?view=config&amp;task=saveConfig' method="post" novalidate>
 
-                        <!-- Messages -->
-                        <?= $html->getListField('config', 'show_messages', $settings->show_messages); ?>
-
                         <!-- Dark mode -->
                         <?= $html->getListField('config', 'dark_mode', $settings->dark_mode); ?>
 

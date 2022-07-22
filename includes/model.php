@@ -14,10 +14,6 @@ defined('_Afi') or die ('restricted access');
 
 class model
 {
-    public $DataInici;
-	public $DataFinal;
-	public $NumDies;
-	public $HoresJornada;
 
     public function getItem($table, $key)
 	{
@@ -34,12 +30,6 @@ class model
 
 			return $db->fetchObject();
 		}
-    }
-
-    public function getTecnics() {
-        $db  = factory::getDatabase();
-		$db->query( "SELECT Id, Treballadors AS nom FROM #_Treballadors" );
-		return $db->fetchObjectList();
     }
 
     public function isAdmin() {
@@ -284,45 +274,6 @@ class model
 		  return implode($html);
     }
 
-    function getHoresPrevistes($pIdTecnic, $pAny, $pMes = 99) {
-		$db   = factory::getDatabase();
-		$query = "SELECT SUM(Hores) TotalHores FROM #_HoresPersonal_PrevisioMensual WHERE IdTreballador=$pIdTecnic AND [Any]=$pAny";
-		if ($pMes != 99) {
-			$query .= " AND Mes=$pMes";
-		}
-		$db->query($query);
-		return $db->loadResult();
-	}
-
-    function getHoresTreball($pIdTecnic, $pAny, $pMes = 99) {
-        $db   = factory::getDatabase();
-        $query = "SELECT SUM(Hores+HoresExtres) TotalHores FROM #_HoresPersonal WHERE IdTreballador=$pIdTecnic AND YEAR(Data)=$pAny";
-        if ($pMes != 99) {
-            $query .= " AND MONTH(Data)=$pMes";
-        }
-        $db->query($query);
-        return $db->loadResult();
-    }
-
-    function getHoresBaixes($pIdTecnic, $pAny, $pMes = 99) {
-        $db   = factory::getDatabase();
-        $query = "SELECT SUM(Hores) TotalHores FROM #_HoresPersonal_Baixes WHERE IdTreballador=$pIdTecnic AND YEAR(Data)=$pAny";
-        if ($pMes != 99) {
-            $query .= " AND MONTH(Data)=$pMes";
-        }
-        $db->query($query);
-        return $db->loadResult();
-    }
-
-    function getHoresVacances($pIdTecnic, $pAny, $pMes = 99) {
-        $db   = factory::getDatabase();
-        $query = "SELECT SUM(Hores) TotalHores FROM #_HoresPersonal_Vacances WHERE IdTreballador=$pIdTecnic AND YEAR(Data)=$pAny";
-        if ($pMes != 99) {
-            $query .= " AND MONTH(Data)=$pMes";
-        }
-        $db->query($query);
-        return $db->loadResult();
-    }
 
     function s_datediff($str_interval, $dt_menor, $dt_maior, $relative=false){
         if( is_string( $dt_menor)) $dt_menor = date_create( $dt_menor);
@@ -350,77 +301,5 @@ class model
         if( $diff->invert)
             return -1 * $total;
         else  return $total;
-    }
-
-    function getPeriodes($pIdTreballador, $pDataInici, $pDataFinal) {
-        // $pDataInici i $pDataFinal han de ser de tipus DateTime
-        $db = factory::getDatabase();
-        // Ajustem la data inicial, per si resulta que és anterior a la data d'alta del treballador!
-        $db->query("SELECT Alta FROM Treballadors WHERE Id=" . $pIdTreballador);
-        $Alta = $db->loadResult();
-        if ($treb!==false) {
-            if ($Alta > $pDataInici) {
-                $pDataInici = $Alta;
-            }
-            if ($pDataInici > $pDataFinal) {
-                return false;
-            }
-        }
-        // Busquem el període al qual pertany la data inicial, per situar-se al principi
-        $db->query(
-            "SELECT MAX(Data) AS DataPeriode1 " .
-            "FROM TreballadorsExercici " .
-            "WHERE IdTreballador=" . $pIdTreballador . " AND Data <= STR_TO_DATE($pDataInici)");
-        $result = $db->fetchObject();
-        if ($result->dataPeriode1==null) {
-            $dataPeriode1 = $pDataInici;
-        } else {
-            $dataPeriode1 = $result->dataPeriode1;
-        }
-        // Obtenim la llista de períodes
-        $query = "SELECT * FROM TreballadorsExercici WHERE IdTreballador = " . $pIdTreballador;
-        $dataPeriode1 == null ? $query .= "" : $query .= " AND Data >= STR_TO_DATE($dataPeriode1)";
-        $query .= " ORDER BY Data";
-        $db->query($query);
-        $rows = $db->fetchObjectList();
-        // Inicializem variables abans del bucle
-        $dataAnt = null;
-        $periodes = array();
-        // Bucle per resseguir tots els períodes
-        foreach ($rows as $row) {
-            if ($row->Data > $pDataFinal) {
-                break;
-            }
-            if ($dataAnt != null) {
-                $periode = new Periode;
-                $periode->DataInici = $dataAnt;
-                $periode->DataFinal = date('Y-m-d', strtotime( $row->Data . " -1 days"));
-                $periode->NumDies = s_datediff('d', $periode->DataInici, $periode->DataFinal);
-                $periode->HoresJornada = $hJornada;
-                $periodes[] = $periode;
-            }
-            $dataAnt = max($row->Data, $pDataInici);
-            $hJornada = $row->HoresJornada;
-        }
-        if ($dataAnt==null) {
-            $dataAnt = $pDataInici;
-            $hJornada = 8;
-            //$dVacances = 23;
-        }
-        $periode = new Periode;
-        $periode->DataInici = $dataAnt;
-        $periode->DataFinal = $dataFinal;
-        $periode->NumDies = s_datediff('d', $periode->DataInici, $periode->DataFinal);
-        $periode->HoresJornada = $hJornada;
-        $periodes[] = $periode;
-        return $periodes;
-    }
-
-    function getPercHoresSobrePrevisio($pHoresPrev, $pHoresTreb, $pHoresVac, $pHoresBaixa) {
-        if ($pHoresPrev==0) {
-            return false;
-        } else {
-            return ($pHoresTreb + $pHoresVac + $pHoresBaixa) / $pHoresPrev * 100;
-        }
     }
 }

@@ -53,7 +53,7 @@ class Language
         //ToDo:: agafar idioma anglès si falla l'idioma seleccionat
         if($this->code == "") { $this->code = 'ca-es'; }
 
-        $file = 'languages/'.$this->code.'.afiframework.ini';
+        $file = 'languages/'.$this->code.'.foxy.ini';
 
         if (file_exists($file) && is_readable($file))
         {
@@ -62,7 +62,7 @@ class Language
             if($translation != "") {
                 return nl2br($translation);
             } else {
-              $file = 'languages/en-gb.afiframework.ini';
+              $file = 'languages/en-gb.foxy.ini';
               $strings = parse_ini_file($file);
               $translation = @$strings[strtoupper($text)];
               if($translation != "") {
